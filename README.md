@@ -1,1 +1,0 @@
-# tguajardo.github.io

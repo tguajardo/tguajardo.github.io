@@ -48,6 +48,10 @@ body{
     font-size:11px;
 }
 
+.custom-text-size {
+    font-size: 1.3rem;
+}
+
 .social-list{
     display:flex;
     list-style:none;

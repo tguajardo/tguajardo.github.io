@@ -1,6 +1,6 @@
 # My Profile Website
 
-Welcome to my profile website! This site is a simple implementation of what I've learned in a CodeAcademy course. It is originally based on the [Bootstrap 5 user social profile with transition effect](https://bbbootstrap.com/snippets/bootstrap-5-user-social-profile-transition-effect-79746232#).
+Welcome to my profile website! This site is a simple implementation of what I've learned in a CodeAcademy course.
 
 ## Objective
 

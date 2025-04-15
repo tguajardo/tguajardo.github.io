@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tarjetas de Estudio - Ingredientes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .card-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+        }
+        .card-img {
+            width: 60%;
+            max-width: 400px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+        .card-img:hover {
+            transform: scale(1.05);
+        }
+        .card-name {
+            display: none;
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container card-container">
+        <h1>Tarjetas de Estudio - Ingredientes</h1>
+        <div class="card">
+            <img id="ingredientImg" src="" alt="Ingrediente" class="card-img" onclick="toggleName()">
+            <p class="card-name" id="ingredientName"></p>
+        </div>
+    </div>
+
+    <script>
+        let ingredients = [];
+        let currentIndex = 0;
+        let nameVisible = false;
+
+        fetch("assets/ingredients.txt")
+            .then(response => response.text())
+            .then(data => {
+                let lines = data.split("\n").map(line => line.trim()).filter(line => line);
+                for (let i = 0; i < lines.length; i += 2) {
+                    if (lines[i] && lines[i + 1]) {
+                        ingredients.push({ image: "assets/" + lines[i], name: lines[i + 1] });
+                    }
+                }
+                shuffleArray(ingredients);
+                showIngredient();
+            });
+
+        function showIngredient() {
+            document.getElementById("ingredientImg").src = ingredients[currentIndex].image;
+            document.getElementById("ingredientName").textContent = ingredients[currentIndex].name;
+            document.getElementById("ingredientName").style.display = "none";
+            nameVisible = false;
+        }
+
+        function toggleName() {
+            if (!nameVisible) {
+                document.getElementById("ingredientName").style.display = "block";
+                nameVisible = true;
+            } else {
+                currentIndex = (currentIndex + 1) % ingredients.length;
+                showIngredient();
+            }
+        }
+
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                let j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+        }
+    </script>
+
+</body>
+</html>

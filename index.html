@@ -1,96 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Tomas Guajardo</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png">
-    <link rel="manifest" href="media/site.webmanifest">
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Tomas Guajardo | Electronics Engineer</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="icon" type="image/x-icon" href="media/favicon.ico"> <!-- Favicon -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .hero {
+            background: linear-gradient(to right, #007bff, #00c6ff);
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            font-size: 30px;
+            color: white;
+        }
+        .social-icons a:hover {
+            color: #ffd700;
+        }
+        .card {
+            transition: 0.3s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container mt-5">
-    
-        <div class="row d-flex justify-content-center">
-            
-            <div class="col-md-7">
-                
-                <div class="card p-3 py-4">
-                    
-                    <div class="text-center">
-                        <img src="media/profile_pic.jpg" width="100" class="rounded-circle">
-                    </div>
-                    
-                    <div class="text-center mt-3">
-                        <span class="bg-secondary p-1 px-3 rounded text-white custom-text-size">Tomas Guajardo</span>
-                        <h5 class="mt-2 mb-0">Electronics Engineer</h5>
-                        
-                        <div class="px-4 mt-1">
-                            <p class="fonts">Electronics Engineer with a pinch of software engineer, I am always looking for new challenges. Look my projects at my Github.</p>
-                        
-                        </div>
-                        
-                        <ul class="social-list">
-                            <li><a href="https://www.linkedin.com/in/tguajardo/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="https://github.com/tguajardo" target="_blank"><i class="fa fa-github"></i></a></li>
-                            <li><a href="https://dev.to/tguajardo" target="_blank"><i class="fa fa-book"></i></a></li>
-                        </ul>
-                        
-                        <div class="buttons">
-                            <a id="contact-link">
-                                <button class="btn btn-primary px-4 ms-3">Contact</button>
-                            </a>
-                        </div>
-                    
-                        <script src="./js/script.js"></script>
-                        
-                    </div>
-                    
-                </div>
-                
-            </div>
-            
-        </div>
-        
-        <div class="row mt-5">
-            <div class="col-md-6">
-                <div class="card p-3 py-4">
-                    <h4 class="text-center">Projects</h4>
-                    <ul class="fonts">
-                        <li>Personal location and security system based on LoRaWAN, GPS, and accelerometer technologies.</li>
-                        <li>Irrigation control systems in agricultural irrigation canal based on XBee communication, cellular, and ultrasonic sensors.</li>
-                        <li>Lighting indication system for cyclists based on Bluetooth communication and RGB LED lights.</li> 
-                        <li>High voltage safety lighting system that required PCB design and test design and assembly for large volumes of PCBA.</li>
-                        
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card p-3 py-4">
-                    <h4 class="text-center">Skills</h4>
-                    <ul class="fonts">
-                        <li>Project Management</li>
-                        <li>Teamwork</li>
-                        <li>IoT Integration</li>
-                        <li>Programming in:
-                        <ul>
-                            <li>Python</li>
-                            <li>C for embedded systems</li>
-                        </ul></li>
-                        <li>Circuit Design</li>
-                        <li>PCBA Processes</li>
-                        <li>Office Software (Word, Excel, and PowerPoint)</li>
-                    </ul>
-                </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <img src="media/profile_pic.jpg" alt="Tomas Guajardo" class="profile-img"> <!-- Profile Picture -->
+            <h1>Tomas Guajardo</h1>
+            <p>Electronics Engineer | IoT & Embedded Systems Enthusiast</p>
+            <div class="social-icons mt-3">
+                <a href="https://www.linkedin.com/in/tguajardo/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/tguajardo" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://dev.to/tguajardo" target="_blank"><i class="fab fa-dev"></i></a>
             </div>
         </div>
-        
+    </section>
+
+    <!-- About Section -->
+    <div class="container my-5">
+        <h2>About Me</h2>
+        <p>I am an Electronics Engineer with a passion for IoT integration, embedded systems, and circuit design. I thrive on solving complex problems and developing innovative solutions.</p>
     </div>
-</body>  
+
+    <!-- Skills Section -->
+    <div class="container my-5">
+        <h2>Skills</h2>
+        <ul>
+            <li>Project Management & Teamwork</li>
+            <li>IoT Integration & Embedded Systems</li>
+            <li>Programming: Python, C for Embedded Systems</li>
+            <li>Circuit Design & PCBA Processes</li>
+            <li>Office Software (Word, Excel, PowerPoint)</li>
+        </ul>
+    </div>
+
+    <!-- Projects Section -->
+    <div class="container my-5">
+        <h2>Projects</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h4>Personal Location & Security System</h4>
+                    <p>Based on LoRaWAN, GPS, and accelerometer technologies.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h4>Irrigation Control System</h4>
+                    <p>Uses XBee communication, cellular, and ultrasonic sensors.</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <h4>Lighting Indication System for Cyclists</h4>
+                    <p>Bluetooth-based system with RGB LED lights.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="container my-5 text-center">
+        <h2>Contact</h2>
+        <p>Let's connect! Reach out via LinkedIn or GitHub.</p>
+        <a href="https://www.linkedin.com/in/tguajardo/" class="btn btn-primary">LinkedIn</a>
+        <a href="https://github.com/tguajardo" class="btn btn-dark">GitHub</a>
+        <a href="https://dev.to/tguajardo" class="btn btn-secondary">Dev.to</a>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Tomas Guajardo | <a href="https://github.com/tguajardo" class="text-white">GitHub</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>

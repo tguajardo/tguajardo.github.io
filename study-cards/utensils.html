@@ -65,7 +65,7 @@
         let nameVisible = false;
 
         // Cargar el archivo de texto
-        fetch("assets/utensilios.txt")
+        fetch("assets/Utensilios.txt")
             .then(response => response.text())
             .then(data => {
                 let lines = data.split("\n").map(line => line.trim()).filter(line => line);

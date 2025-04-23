@@ -10,6 +10,7 @@
             font-family: Arial, sans-serif;
             text-align: center;
             padding: 20px;
+            background-color: #f8f9fa;
         }
         .card-container {
             display: flex;
@@ -18,21 +19,33 @@
             justify-content: center;
             min-height: 80vh;
         }
+        .card {
+            background-color: white;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 90%;
+            max-width: 400px;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
         .card-img {
-            width: 60%;
+            width: 100%;
             max-width: 400px;
             height: auto;
-            cursor: pointer;
-            transition: transform 0.2s;
-        }
-        .card-img:hover {
-            transform: scale(1.05);
+            border-radius: 8px;
+            margin-bottom: 20px;
         }
         .card-name {
             display: none;
             font-size: 24px;
             font-weight: bold;
-            margin-top: 15px;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -40,8 +53,8 @@
 
     <div class="container card-container">
         <h1>Tarjetas de Estudio - Ingredientes</h1>
-        <div class="card">
-            <img id="ingredientImg" src="" alt="Ingrediente" class="card-img" onclick="toggleName()">
+        <div class="card" onclick="toggleName()">
+            <img id="ingredientImg" src="" alt="Ingrediente" class="card-img">
             <p class="card-name" id="ingredientName"></p>
         </div>
     </div>
@@ -51,6 +64,7 @@
         let currentIndex = 0;
         let nameVisible = false;
 
+        // Cargar el archivo de texto
         fetch("assets/ingredients.txt")
             .then(response => response.text())
             .then(data => {

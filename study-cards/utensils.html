@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Tarjetas de Estudio - Utensilios</title>
+    <title>Tarjetas de Estudio - Utensilios de Cocina</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
         body {
@@ -36,7 +36,6 @@
         }
         .card-img {
             width: 100%;
-            max-width: 400px;
             height: auto;
             border-radius: 8px;
             margin-bottom: 20px;
@@ -45,16 +44,16 @@
             display: none;
             font-size: 24px;
             font-weight: bold;
-            margin-top: 10px;
+            margin-top: 15px;
         }
     </style>
 </head>
 <body>
 
     <div class="container card-container">
-        <h1>Tarjetas de Estudio - Utensilios</h1>
+        <h1>Tarjetas de Estudio - Utensilios de Cocina</h1>
         <div class="card" onclick="toggleName()">
-            <img id="utensilImg" src="" alt="utensilio" class="card-img">
+            <img id="utensilImg" src="" alt="Utensilio" class="card-img">
             <p class="card-name" id="utensilName"></p>
         </div>
     </div>
@@ -64,7 +63,7 @@
         let currentIndex = 0;
         let nameVisible = false;
 
-        // Cargar el archivo de texto
+        // Load utensils from the text file
         fetch("assets/Utensilios.txt")
             .then(response => response.text())
             .then(data => {
@@ -74,11 +73,11 @@
                         utensils.push({ image: "assets/" + lines[i], name: lines[i + 1] });
                     }
                 }
-                shuffleArray(utensils);
-                showutensil();
+                shuffleArray(utensils); // Shuffle the order
+                showUtensil();
             });
 
-        function showutensil() {
+        function showUtensil() {
             document.getElementById("utensilImg").src = utensils[currentIndex].image;
             document.getElementById("utensilName").textContent = utensils[currentIndex].name;
             document.getElementById("utensilName").style.display = "none";
@@ -91,7 +90,7 @@
                 nameVisible = true;
             } else {
                 currentIndex = (currentIndex + 1) % utensils.length;
-                showutensil();
+                showUtensil();
             }
         }
 

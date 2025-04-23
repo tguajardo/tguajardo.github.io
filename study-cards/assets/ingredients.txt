@@ -175,7 +175,7 @@ boniato
 ing_tomato.png
 tomate
 ing_watermelon.png
-melon
+sandia
 ing_yellow pepper.jpg
 pimiento amarillo
 ing_zucchini.png

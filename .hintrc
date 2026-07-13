@@ -1,20 +1,24 @@
 {
-  "extends": [
-    "development"
-  ],
+  "extends": ["development"],
   "hints": {
     "axe/text-alternatives": [
       "default",
       {
-        "image-alt": "off"
-      }
+        "image-alt": "off",
+      },
     ],
     "axe/name-role-value": [
       "default",
       {
-        "link-name": "off"
-      }
+        "link-name": "off",
+      },
     ],
-    "disown-opener": "off"
-  }
+    "disown-opener": "off",
+    "compat-api/html": [
+      "default",
+      {
+        "ignore": ["meta[name=theme-color]"],
+      },
+    ],
+  },
 }

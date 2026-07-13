@@ -1,124 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="UTF-8" />
     <title>Tomas Guajardo | Electronics Engineer</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="icon" type="image/x-icon" href="media/favicon.ico"> <!-- Favicon -->
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .hero {
-            background: linear-gradient(to right, #007bff, #00c6ff);
-            color: white;
-            padding: 80px 0;
-            text-align: center;
-        }
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 15px;
-        }
-        .social-icons a {
-            margin: 0 10px;
-            font-size: 30px;
-            color: white;
-        }
-        .social-icons a:hover {
-            color: #ffd700;
-        }
-        .card {
-            transition: 0.3s;
-        }
-        .card:hover {
-            transform: scale(1.05);
-        }
-        .footer {
-            background-color: #222;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-    </style>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <img src="media/profile_pic.jpg" alt="Tomas Guajardo" class="profile-img"> <!-- Profile Picture -->
-            <h1>Tomas Guajardo</h1>
-            <p>Electronics Engineer | IoT & Embedded Systems Enthusiast</p>
-            <div class="social-icons mt-3">
-                <a href="https://www.linkedin.com/in/tguajardo/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/tguajardo" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://dev.to/tguajardo" target="_blank"><i class="fab fa-dev"></i></a>
-            </div>
+  <body>
+    <div class="page">
+      <header>
+        <div class="identity">
+          <div class="avatar">TG</div>
+          <div class="identity-text">
+            <h1 id="name">Tomas Guajardo</h1>
+            <h2 id="headline">Electronics Engineer · IoT & Embedded Systems</h2>
+          </div>
         </div>
-    </section>
 
-    <!-- About Section -->
-    <div class="container my-5">
-        <h2>About Me</h2>
-        <p>I am an Electronics Engineer with a passion for IoT integration, embedded systems, and circuit design. I thrive on solving complex problems and developing innovative solutions.</p>
-    </div>
-
-    <!-- Skills Section -->
-    <div class="container my-5">
-        <h2>Skills</h2>
-        <ul>
-            <li>Project Management & Teamwork</li>
-            <li>IoT Integration & Embedded Systems</li>
-            <li>Programming: Python, C for Embedded Systems</li>
-            <li>Circuit Design & PCBA Processes</li>
-            <li>Office Software (Word, Excel, PowerPoint)</li>
-        </ul>
-    </div>
-
-    <!-- Projects Section -->
-    <div class="container my-5">
-        <h2>Projects</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <h4>Personal Location & Security System</h4>
-                    <p>Based on LoRaWAN, GPS, and accelerometer technologies.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <h4>Irrigation Control System</h4>
-                    <p>Uses XBee communication, cellular, and ultrasonic sensors.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card p-3">
-                    <h4>Lighting Indication System for Cyclists</h4>
-                    <p>Bluetooth-based system with RGB LED lights.</p>
-                </div>
-            </div>
+        <div class="lang-switch">
+          <span class="lang-label">Language / Idioma / Llengua</span>
+          <button class="lang-btn active" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="es">ES</button>
+          <button class="lang-btn" data-lang="ca">CA</button>
         </div>
+      </header>
+
+      <main>
+        <!-- LEFT COLUMN -->
+        <section>
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title" id="about-title">ABOUT ME</div>
+              <span class="card-tag" id="about-tag">Profile</span>
+            </div>
+            <div class="card-body">
+              <p id="about-text"></p>
+              <p id="about-extra"></p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title" id="skills-title">SKILLS</div>
+              <span class="card-tag" id="skills-tag">Tech & Soft</span>
+            </div>
+            <div class="card-body">
+              <p id="skills-intro"></p>
+              <div class="pill-list" id="skills-tech"></div>
+              <div class="pill-list" id="skills-soft"></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title" id="projects-title">PROJECTS</div>
+              <span class="card-tag" id="projects-tag">Selected</span>
+            </div>
+            <div class="card-body">
+              <div class="section-list" id="projects-list"></div>
+            </div>
+          </div>
+        </section>
+
+        <!-- RIGHT COLUMN -->
+        <section>
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title" id="experience-title">EXPERIENCE</div>
+              <span class="card-tag" id="experience-tag">Engineering & Pressure</span>
+            </div>
+            <div class="card-body">
+              <div class="section-list" id="experience-list"></div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title" id="contact-title">CONTACT</div>
+              <span class="card-tag" id="contact-tag">Let’s connect</span>
+            </div>
+            <div class="card-body">
+              <div class="contact-grid">
+                <div class="contact-item">
+                  <div class="contact-label" id="phone-label">Phone</div>
+                  <div>+34 663 53 59 31</div>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-label" id="email-label">Email</div>
+                  <a class="contact-link" href="mailto:tguajardo@gmail.com">
+                    tguajardo@gmail.com
+                  </a>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-label">LinkedIn</div>
+                  <a
+                    class="contact-link"
+                    href="https://www.linkedin.com/in/tguajardo/"
+                    target="_blank"
+                  >
+                    linkedin.com/in/tguajardo
+                  </a>
+                </div>
+
+                <div class="contact-item">
+                  <div class="contact-label">GitHub</div>
+                  <a class="contact-link" href="https://github.com/tguajardo" target="_blank">
+                    github.com/tguajardo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <span id="footer-text">© 2025 Tomas Guajardo · GitHub Pages</span>
+        <div class="footer-links">
+          <a class="footer-link" href="#">CV (PDF)</a>
+        </div>
+      </footer>
     </div>
 
-    <!-- Contact Section -->
-    <div class="container my-5 text-center">
-        <h2>Contact</h2>
-        <p>Let's connect! Reach out via LinkedIn or GitHub.</p>
-        <a href="https://www.linkedin.com/in/tguajardo/" class="btn btn-primary">LinkedIn</a>
-        <a href="https://github.com/tguajardo" class="btn btn-dark">GitHub</a>
-        <a href="https://dev.to/tguajardo" class="btn btn-secondary">Dev.to</a>
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2025 Tomas Guajardo | <a href="https://github.com/tguajardo" class="text-white">GitHub</a></p>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html>

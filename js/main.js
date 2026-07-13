@@ -37,7 +37,8 @@ const content = {
     projectsTitle: 'PROJECTS',
     projectsTag: 'Selected',
     projectsIntro:
-      'These projects were selected to demonstrate the versatility of the technologies I work with and how choosing the right tools for each challenge leads to more efficient and reliable results.',
+      'These selected projects highlight my versatility across multiple technologies and demonstrate how choosing the right tools for each challenge leads to efficient, reliable and scalable engineering results.',
+
     projects: [
       {
         title: 'Personal Location & Safety System',
@@ -121,7 +122,8 @@ const content = {
     projectsTitle: 'PROYECTOS',
     projectsTag: 'Destacados',
     projectsIntro:
-      'Estos proyectos fueron seleccionados para mostrar la versatilidad de las tecnologías que utilizo y cómo la elección adecuada de herramientas para cada desafío permite obtener resultados más eficientes y confiables.',
+      'Estos proyectos seleccionados muestran mi versatilidad en distintas tecnologías y cómo la elección precisa de herramientas para cada desafío permite obtener resultados eficientes, confiables y escalables.',
+
     projects: [
       {
         title: 'Sistema de ubicación y seguridad personal',
@@ -205,7 +207,8 @@ const content = {
     projectsTitle: 'PROJECTES',
     projectsTag: 'Destacats',
     projectsIntro:
-      'Aquests projectes han estat seleccionats per mostrar la versatilitat de les tecnologies que utilitzo i com triar les eines adequades per a cada repte permet obtenir resultats més eficients i fiables.',
+      'Aquests projectes seleccionats mostren la meva versatilitat en diverses tecnologies i com triar les eines adequades per a cada repte permet obtenir resultats eficients, fiables i escalables.',
+
     projects: [
       {
         title: 'Sistema de localització i seguretat personal',
@@ -289,6 +292,10 @@ function renderLanguage(lang) {
     softContainer.appendChild(span);
   });
 
+  document.getElementById('projects-title').textContent = c.projectsTitle;
+  document.getElementById('projects-tag').textContent = c.projectsTag;
+  document.getElementById('projects-intro').textContent = c.projectsIntro;
+
   const projContainer = document.getElementById('projects-list');
   projContainer.innerHTML = '';
   c.projects.forEach((p) => {
@@ -335,3 +342,20 @@ document.querySelectorAll('.lang-btn').forEach((btn) => {
 
 /* Initial render */
 renderLanguage('en');
+
+/* Theme toggle */
+const themeToggle = document.getElementById('theme-toggle');
+
+themeToggle.addEventListener('click', () => {
+  document.documentElement.classList.toggle('light');
+
+  const mode = document.documentElement.classList.contains('light') ? 'light' : 'dark';
+
+  localStorage.setItem('theme', mode);
+});
+
+/* Load saved theme */
+const savedTheme = localStorage.getItem('theme');
+if (savedTheme === 'light') {
+  document.documentElement.classList.add('light');
+}

@@ -5,13 +5,20 @@
     <title>Tomas Guajardo | Electronics Engineer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="media/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon-16x16.png" />
+    <link rel="manifest" href="media/site.webmanifest" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
 
   <body>
     <div class="page">
       <header>
         <div class="identity">
-          <div class="avatar">TG</div>
+          <div class="avatar">
+            <img src="media/profile_pic.jpg" alt="Tomas Guajardo" />
+          </div>
           <div class="identity-text">
             <h1 id="name">Tomas Guajardo</h1>
             <h2 id="headline">Electronics Engineer · IoT & Embedded Systems</h2>
@@ -23,6 +30,10 @@
           <button class="lang-btn active" data-lang="en">EN</button>
           <button class="lang-btn" data-lang="es">ES</button>
           <button class="lang-btn" data-lang="ca">CA</button>
+        </div>
+
+        <div class="theme-switch">
+          <button id="theme-toggle" class="theme-btn">Dark / Light</button>
         </div>
       </header>
 
@@ -58,6 +69,7 @@
               <span class="card-tag" id="projects-tag">Selected</span>
             </div>
             <div class="card-body">
+              <p id="projects-intro" class="projects-intro"></p>
               <div class="section-list" id="projects-list"></div>
             </div>
           </div>

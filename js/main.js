@@ -1,14 +1,14 @@
 const content = {
   en: {
     name: 'Tomas Guajardo',
-    headline: 'Electronics Engineer · IoT & Embedded Systems',
+    headline: 'Electronics Engineer · Embedded Systems · IoT Product Owner',
 
     aboutTitle: 'ABOUT ME',
     aboutTag: 'Profile',
     aboutText:
-      'Electronics Engineer specialized in IoT, embedded systems and PCB design. I have led high‑precision engineering projects where rapid decision‑making, pressure management and technical problem‑solving were essential.',
+      'Electronics Engineer with more than a decade designing, integrating and validating embedded and IoT systems end‑to‑end. Co‑founder and Chief Engineer of an electronics/IoT company, leading multidisciplinary teams and owning the full product lifecycle — from requirements discovery and technical definition to PCB design, embedded development, wireless communications and system verification.',
     aboutExtra:
-      'My background includes working in demanding environments, coordinating multidisciplinary teams and delivering solutions under tight deadlines and operational stress.',
+      'I combine hands‑on engineering expertise with product‑ownership skills: stakeholder communication, feasibility analysis, technical decision‑making, roadmap definition and delivery of reliable solutions under demanding conditions.',
 
     skillsTitle: 'SKILLS',
     skillsTag: 'Tech & Soft',
@@ -16,13 +16,16 @@ const content = {
       'Strong technical foundation combined with proven ability to perform under pressure.',
 
     skillsTech: [
-      'IoT integration',
-      'Embedded C (microcontrollers)',
-      'Python',
-      'Electronic circuit design',
-      'PCB & PCBA processes',
-      'High‑pressure troubleshooting',
-      'Project management',
+      'Embedded C (real‑time, microcontrollers)',
+      'Python (automation & tooling)',
+      'PCB & schematic design',
+      'PCBA quality & test processes',
+      'Wireless communications: LoRaWAN, XBee, BLE, cellular, GPS',
+      'Systems integration, verification & validation',
+      'IoT solution architecture',
+      'Requirements analysis & feasibility studies',
+      'Supplier & vendor management',
+      'Technical leadership & cross‑functional coordination',
     ],
 
     skillsSoft: [
@@ -41,39 +44,35 @@ const content = {
 
     projects: [
       {
-        title: 'Personal Location & Safety System',
-        sub: 'LoRaWAN · GPS · Accelerometers',
-        desc: 'Low‑power tracking system designed for reliability under harsh conditions.',
+        title: 'High‑voltage safety lighting system',
+        desc: 'PCB design, integration, verification and large‑volume PCBA test‑process definition for a safety‑critical system.',
       },
       {
-        title: 'Agricultural Irrigation Control System',
-        sub: 'XBee · Cellular · Ultrasonic sensors',
-        desc: 'Real‑time monitoring system built to operate under environmental stress.',
+        title: 'Real‑time safety & monitoring platform (LoRaWAN)',
+        desc: 'Fall‑detection sensors, GPS modules, field validation and full system integration',
       },
       {
-        title: 'Cyclist Lighting Indication System',
-        sub: 'Bluetooth · RGB LED',
-        desc: 'Wearable signaling system for cyclists with wireless control.',
+        title: 'Agricultural irrigation gate‑control system',
+        desc: 'Embedded control (Python, microcomputers), XBee communication, sensor integration and programmable/manual operation.',
+      },
+      {
+        title: 'Cyclist glove signaling system (Bluetooth)',
+        desc: 'Concept → prototype → functional testing of a wearable wireless signaling device.',
       },
     ],
 
     experienceTitle: 'EXPERIENCE',
-    experienceTag: 'Engineering & Pressure',
+    experienceTag: 'Engineering',
     experience: [
       {
         title: 'Independent · Engineering Consultant',
         sub: 'May 2023 – Present',
-        desc: 'Feasibility studies, technical‑economic analysis and PCB/embedded development under strict deadlines.',
+        desc: 'Feasibility studies, technical‑economic assessments, system‑improvement reports, embedded development and IoT integration.',
       },
       {
         title: 'Manglar Labs · Chief Engineer',
         sub: '2011 – 2023',
-        desc: 'Led high‑precision technology projects, solving critical issues in real‑time under demanding conditions.',
-      },
-      {
-        title: 'Minimarket Los Lagos · Customer Service',
-        sub: '2004 – 2010',
-        desc: 'Customer service and inventory control in a fast‑paced environment.',
+        desc: '  Full product lifecycle ownership, PCB/firmware design, wireless communications, system verification, supplier management, client interaction and leadership of multidisciplinary engineering teams.',
       },
     ],
 
@@ -86,33 +85,35 @@ const content = {
 
   es: {
     name: 'Tomás Guajardo',
-    headline: 'Ingeniero Electrónico · IoT y Sistemas Embebidos',
+    headline: 'Ingeniero Electrónico · Sistemas Embebidos · IoT Product Owner',
 
     aboutTitle: 'SOBRE MÍ',
     aboutTag: 'Perfil',
     aboutText:
-      'Ingeniero Electrónico especializado en IoT, sistemas embebidos y diseño de PCBs. He liderado proyectos de alta precisión donde la toma rápida de decisiones, la gestión del estrés y la resolución técnica de problemas fueron fundamentales.',
+      'Ingeniero Electrónico con más de una década diseñando, integrando y validando sistemas embebidos e IoT de principio a fin. Cofundador e Ingeniero en Jefe de una empresa de ingeniería electrónica/IoT, liderando equipos multidisciplinarios y gestionando el ciclo completo del producto: levantamiento de requisitos, definición técnica, diseño de PCB, desarrollo embebido, comunicaciones inalámbricas y verificación de sistemas.',
     aboutExtra:
-      'Tengo experiencia trabajando en entornos exigentes, coordinando equipos multidisciplinarios y entregando soluciones bajo plazos ajustados y presión operativa.',
+      'Combino experiencia técnica práctica con habilidades de gestión de producto: comunicación con stakeholders, análisis de factibilidad, toma de decisiones técnicas, definición de roadmap y entrega de soluciones confiables en entornos exigentes.',
 
     skillsTitle: 'HABILIDADES',
     skillsTag: 'Técnicas y Blandas',
-    skillsIntro:
-      'Sólida base técnica combinada con capacidad demostrada para trabajar bajo presión.',
+    skillsIntro: 'Sólida base técnica combinada con capacidad demostrada para rendir bajo presión.',
 
     skillsTech: [
-      'Integración de IoT',
-      'Programación en C (microcontroladores)',
-      'Python',
-      'Diseño de circuitos electrónicos',
-      'Procesos PCB y PCBA',
-      'Resolución de problemas bajo presión',
-      'Gestión de proyectos',
+      'C embebido (tiempo real, microcontroladores)',
+      'Python (automatización y herramientas)',
+      'Diseño de PCB y esquemáticos',
+      'Procesos de calidad y test PCBA',
+      'Comunicaciones inalámbricas: LoRaWAN, XBee, BLE, celular, GPS',
+      'Integración, verificación y validación de sistemas',
+      'Arquitectura de soluciones IoT',
+      'Análisis de requisitos y estudios de factibilidad',
+      'Gestión de proveedores',
+      'Liderazgo técnico y coordinación de equipos',
     ],
 
     skillsSoft: [
       'Trabajo en equipo',
-      'Resistencia al estrés',
+      'Resiliencia al estrés',
       'Toma rápida de decisiones',
       'Atención al detalle',
       'Gestión del tiempo',
@@ -120,84 +121,82 @@ const content = {
     ],
 
     projectsTitle: 'PROYECTOS',
-    projectsTag: 'Destacados',
+    projectsTag: 'Seleccionados',
     projectsIntro:
-      'Estos proyectos seleccionados muestran mi versatilidad en distintas tecnologías y cómo la elección precisa de herramientas para cada desafío permite obtener resultados eficientes, confiables y escalables.',
+      'Estos proyectos seleccionados destacan mi versatilidad en múltiples tecnologías y demuestran cómo elegir las herramientas adecuadas para cada desafío conduce a resultados de ingeniería eficientes, confiables y escalables.',
 
     projects: [
       {
-        title: 'Sistema de ubicación y seguridad personal',
-        sub: 'LoRaWAN · GPS · Acelerómetros',
-        desc: 'Sistema de seguimiento de bajo consumo diseñado para condiciones exigentes.',
+        title: 'Sistema de iluminación de seguridad de alto voltaje',
+        desc: 'Diseño de PCB, integración, verificación y definición de procesos de test PCBA para un sistema crítico de seguridad.',
       },
       {
-        title: 'Sistema de control de riego agrícola',
-        sub: 'XBee · Celular · Sensores ultrasónicos',
-        desc: 'Monitoreo en tiempo real diseñado para operar bajo estrés ambiental.',
+        title: 'Plataforma de seguridad y monitoreo en tiempo real (LoRaWAN)',
+        desc: 'Sensores de detección de caídas, módulos GPS, validación en campo e integración completa del sistema.',
       },
       {
-        title: 'Sistema lumínico para ciclistas',
-        sub: 'Bluetooth · LED RGB',
-        desc: 'Sistema portátil de señalización con control inalámbrico.',
+        title: 'Sistema de control de compuertas de riego agrícola',
+        desc: 'Control embebido (Python, microcomputadores), comunicación XBee, integración de sensores y operación programable/manual.',
+      },
+      {
+        title: 'Guante de señalización para ciclistas (Bluetooth)',
+        desc: 'Concepto → prototipo → pruebas funcionales de un dispositivo wearable inalámbrico.',
       },
     ],
 
     experienceTitle: 'EXPERIENCIA',
-    experienceTag: 'Ingeniería y presión',
+    experienceTag: 'Ingeniería',
     experience: [
       {
-        title: 'Consultor de Ingeniería · Independiente',
-        sub: 'Mayo 2023 – Actual',
-        desc: 'Estudios de factibilidad y desarrollo embebido bajo plazos estrictos.',
+        title: 'Independiente · Consultor de Ingeniería',
+        sub: 'Mayo 2023 – Presente',
+        desc: 'Estudios de factibilidad, análisis técnico‑económico, informes de mejora de sistemas, desarrollo embebido e integración IoT.',
       },
       {
-        title: 'Manglar Labs · Ingeniero en jefe',
+        title: 'Manglar Labs · Ingeniero en Jefe',
         sub: '2011 – 2023',
-        desc: 'Liderazgo de proyectos de alta precisión, resolviendo problemas críticos en tiempo real.',
-      },
-      {
-        title: 'Minimarket Los Lagos · Atención al cliente',
-        sub: '2004 – 2010',
-        desc: 'Atención al cliente en un entorno de alta demanda.',
+        desc: 'Gestión completa del ciclo del producto, diseño de PCB/firmware, comunicaciones inalámbricas, verificación de sistemas, gestión de proveedores, interacción con clientes y liderazgo de equipos multidisciplinarios.',
       },
     ],
 
     contactTitle: 'CONTACTO',
     contactTag: 'Conectemos',
     phoneLabel: 'Teléfono',
-    emailLabel: 'Correo',
+    emailLabel: 'Correo electrónico',
     footerText: '© 2025 Tomás Guajardo · GitHub Pages',
   },
 
   ca: {
     name: 'Tomàs Guajardo',
-    headline: 'Enginyer Electrònic · IoT i Sistemes Incrustats',
+    headline: 'Enginyer Electrònic · Sistemes Incrustats · IoT Product Owner',
 
     aboutTitle: 'SOBRE MI',
     aboutTag: 'Perfil',
     aboutText:
-      'Enginyer Electrònic especialitzat en IoT, sistemes incrustats i disseny de PCBs. He liderat projectes d’alta precisió on la presa ràpida de decisions, la gestió de l’estrès i la resolució tècnica de problemes han estat essencials.',
+      'Enginyer Electrònic amb més d’una dècada dissenyant, integrant i validant sistemes incrustats i IoT de principi a fi. Cofundador i Enginyer en Cap d’una empresa d’enginyeria electrònica/IoT, liderant equips multidisciplinaris i gestionant tot el cicle del producte: requisits, definició tècnica, disseny de PCB, desenvolupament embegut, comunicacions sense fils i verificació de sistemes.',
     aboutExtra:
-      'Tinc experiència en entorns exigents, coordinant equips multidisciplinaris i lliurant solucions sota terminis ajustats i pressió operativa.',
+      'Combino experiència tècnica pràctica amb habilitats de gestió de producte: comunicació amb stakeholders, anàlisi de viabilitat, presa de decisions tècniques, definició de roadmap i entrega de solucions fiables en entorns exigents.',
 
     skillsTitle: 'HABILITATS',
-    skillsTag: 'Tècniques i transversals',
-    skillsIntro:
-      'Base tècnica sòlida combinada amb capacitat demostrada per treballar sota pressió.',
+    skillsTag: 'Tècniques i Personals',
+    skillsIntro: 'Base tècnica sòlida combinada amb capacitat demostrada per rendir sota pressió.',
 
     skillsTech: [
-      'Integració d’IoT',
-      'Programació en C (microcontroladors)',
-      'Python',
-      'Disseny de circuits electrònics',
-      'Processos PCB i PCBA',
-      'Resolució de problemes sota pressió',
-      'Gestió de projectes',
+      'C embegut (temps real, microcontroladors)',
+      'Python (automatització i eines)',
+      'Disseny de PCB i esquemàtics',
+      'Processos de qualitat i test PCBA',
+      'Comunicacions sense fils: LoRaWAN, XBee, BLE, mòbil, GPS',
+      'Integració, verificació i validació de sistemes',
+      'Arquitectura de solucions IoT',
+      'Anàlisi de requisits i estudis de viabilitat',
+      'Gestió de proveïdors',
+      'Lideratge tècnic i coordinació d’equips',
     ],
 
     skillsSoft: [
       'Treball en equip',
-      'Gestió de l’estrès',
+      'Resiliència a l’estrès',
       'Presa ràpida de decisions',
       'Atenció al detall',
       'Gestió del temps',
@@ -205,52 +204,48 @@ const content = {
     ],
 
     projectsTitle: 'PROJECTES',
-    projectsTag: 'Destacats',
+    projectsTag: 'Seleccionats',
     projectsIntro:
-      'Aquests projectes seleccionats mostren la meva versatilitat en diverses tecnologies i com triar les eines adequades per a cada repte permet obtenir resultats eficients, fiables i escalables.',
+      'Aquests projectes seleccionats destaquen la meva versatilitat en múltiples tecnologies i demostren com triar les eines adequades per a cada repte condueix a resultats d’enginyeria eficients, fiables i escalables.',
 
     projects: [
       {
-        title: 'Sistema de localització i seguretat personal',
-        sub: 'LoRaWAN · GPS · Acceleròmetres',
-        desc: 'Sistema de seguiment de baix consum dissenyat per a condicions exigents.',
+        title: 'Sistema d’il·luminació de seguretat d’alt voltatge',
+        desc: 'Disseny de PCB, integració, verificació i definició de processos de test PCBA per a un sistema crític de seguretat.',
       },
       {
-        title: 'Control de reg agrícola',
-        sub: 'XBee · Mòbil · Sensors ultrasònics',
-        desc: 'Monitoratge en temps real preparat per operar sota estrès ambiental.',
+        title: 'Plataforma de seguretat i monitoratge en temps real (LoRaWAN)',
+        desc: 'Sensors de detecció de caigudes, mòduls GPS, validació en camp i integració completa del sistema.',
       },
       {
-        title: 'Sistema lumínic per a ciclistes',
-        sub: 'Bluetooth · LED RGB',
-        desc: 'Sistema portàtil de senyalització amb control sense fils.',
+        title: 'Sistema de control de comportes de reg agrícola',
+        desc: 'Control embegut (Python, microordinadors), comunicació XBee, integració de sensors i operació programable/manual.',
+      },
+      {
+        title: 'Guant de senyalització per a ciclistes (Bluetooth)',
+        desc: 'Concepte → prototip → proves funcionals d’un dispositiu wearable sense fils.',
       },
     ],
 
     experienceTitle: 'EXPERIÈNCIA',
-    experienceTag: 'Enginyeria i pressió',
+    experienceTag: 'Enginyeria',
     experience: [
       {
-        title: 'Consultor d’Enginyeria · Independent',
+        title: 'Independent · Consultor d’Enginyeria',
         sub: 'Maig 2023 – Actualitat',
-        desc: 'Estudis de viabilitat i desenvolupament embegut sota terminis estrictes.',
+        desc: 'Estudis de viabilitat, anàlisi tècnic‑econòmic, informes de millora de sistemes, desenvolupament embegut i integració IoT.',
       },
       {
-        title: 'Manglar Labs · Enginyer en cap',
+        title: 'Manglar Labs · Enginyer en Cap',
         sub: '2011 – 2023',
-        desc: 'Direcció de projectes d’alta precisió, resolent problemes crítics en temps real.',
-      },
-      {
-        title: 'Minimarket Los Lagos · Atenció al client',
-        sub: '2004 – 2010',
-        desc: 'Atenció al públic en un entorn de gran demanda.',
+        desc: 'Gestió completa del cicle del producte, disseny de PCB/firmware, comunicacions sense fils, verificació de sistemes, gestió de proveïdors, relació amb clients i lideratge d’equips multidisciplinaris.',
       },
     ],
 
     contactTitle: 'CONTACTE',
-    contactTag: 'Connectem',
+    contactTag: 'Parlem',
     phoneLabel: 'Telèfon',
-    emailLabel: 'Correu',
+    emailLabel: 'Correu electrònic',
     footerText: '© 2025 Tomàs Guajardo · GitHub Pages',
   },
 };

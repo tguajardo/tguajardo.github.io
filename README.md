@@ -49,34 +49,32 @@ Se presenta un resumen de mi trayectoria en consultoría, dirección técnica y 
 
 ## Estructura del proyecto
 
-TGUAJARDO.GITHUB.IO/
-│
-├── css/
-│ └── style.css
-│
-├── js/
-│ └── main.js
-│
-├── media/
-│ ├── profile_pic.jpg
-│ ├── favicon.ico
-│ ├── favicon-16x16.png
-│ ├── favicon-32x32.png
-│ ├── apple-touch-icon.png
-│ ├── android-chrome-192x192.png
-│ ├── android-chrome-512x512.png
-│ └── site.webmanifest
-│
-├── study-cards/
-│ └── assets/
-│ ├── ingredients.html
-│ ├── learn-to-learn-concepts.html
-│ ├── utensils.html
-│ └── readme.md
-│
-├── CV_Tomas_Guajardo.pdf
-├── index.html
-└── README.md
+- `css/`
+  - `style.css`
+
+- `js/`
+  - `main.js`
+
+- `media/`
+  - `profile_pic.jpg`
+
+- `study-cards/`
+  - `assets/`
+  - `ingredients.html`
+  - `learn-to-learn-concepts.html`
+  - `utensils.html`
+  - `README.md`
+
+- `favicon.ico`
+- `favicon-16x16.png`
+- `favicon-32x32.png`
+- `apple-touch-icon.png`
+- `android-chrome-192x192.png`
+- `android-chrome-512x512.png`
+- `site.webmanifest`
+- `CV_Tomas_Guajardo.pdf`
+- `index.html`
+- `README.md`
 
 ### Study-cards
 
